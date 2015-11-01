@@ -5,21 +5,56 @@ html
     meta(http-equiv = "Content-Type" content = "text/html" charset = "utf-8")
     meta(name = "viewport" content = "width=device-width, initial-scale=1.0")
     
-    link(href = "css/style.css" type = "text/css" rel = "stylesheet")
-      
     title Текстиль в интерьере
+  
+    //STYLE
+    link(href = "css/app.css"   type = "text/css" rel = "stylesheet")
+    
+    //FONT
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css')
+    
+    //ANIMATE WOW
+    link(rel = "stylesheet" href = "css/animate.css")
+
+    //MODERNIZR
+    script(src = "bower_components/modernizr/modernizr.js")
+    
+    //INITIALIZE WOW
+    script( src = "js/wow.min.js")
+    script new WOW().init()
     
   body
     header
       .blur-bg
-      .fullWidth
-        .small-4.columns
-          hr.line
-        .small-4.columns
-          h1.title.bold.up Hello
-        .small-4.columns
-          hr.line
+      .fullWidth.intro.wow.fadeInUp
         .small-12.columns
-          h2.narrow I am Tim Surkov
+          h1.title.narrow.up Howdy, Partner!
         .small-12.columns
-          h3.intro.narrow A web designer with passion to create
+          hr
+        .small-12.columns
+          h2.title.narrow.up Why dont we meet ?
+    section.blocky.content
+      .fullWidth.wow.fadeInUp
+        .small-4.columns
+          hr.grey.right
+        .small-4.columns
+          h1.title.bold.up Content
+        .small-4.columns
+          hr.grey.left
+        
+      
+  //SCRIPTS
+  //JQUERY
+  script(src = "bower_components/jquery/dist/jquery.min.js")
+              
+  //JQUERY EASING
+  script( src = "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+              
+  //FOUNDATION
+  script(src = "bower_components/foundation/js/foundation.js")
+              
+  //APP
+  script(src = "js/app.js")
+  
+  //PARALLAX
+  script( src = "js/scroll.js")
