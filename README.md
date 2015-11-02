@@ -31,6 +31,6 @@ If you have mentiod tiny "P.S." note which tells you to refresh the page, you pr
 2) In [imageChanger.js](js/imageChanger.js) you can find two functions<br>
   - First one generates random integer from minimum to maximum (inclusive) -  this number is called "seed"
   - The other one sets background image based on seed
-<br><br>
+
 ###Thank You, Stranger, for visiting this tiny little repo, stored somwhere in a deep deeps of the net
 #####P.S. I won't get unhappy if You will [donate](https://www.paypal.me/TimSurkov) for my next cup of tea in case you have enjoyed this project
