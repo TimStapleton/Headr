@@ -5,7 +5,10 @@ html
     meta(http-equiv = "Content-Type" content = "text/html" charset = "utf-8")
     meta(name = "viewport" content = "width=device-width, initial-scale=1.0")
     
-    title Текстиль в интерьере
+    title H E A D R
+  
+    //FAVICON
+    link(rel="icon" type="image/ico" href="images/favicon.ico")
   
     //STYLE
     link(href = "css/app.css"   type = "text/css" rel = "stylesheet")
@@ -23,24 +26,32 @@ html
     script( src = "js/wow.min.js")
     script new WOW().init()
     
-  body
+  body(onload="changeImage()").wow.fadeIn
     header
       .blur-bg
-      .fullWidth.intro.wow.fadeInUp
-        .small-12.columns
+      .fullWidth.wow.fadeInUp
+        .logo
+          img(src = "images/Logo.png")
+        .small-12.columns.intro
           h1.title.narrow.up Howdy, Partner!
-        .small-12.columns
+        .small-12.columns.intro
           hr
-        .small-12.columns
-          h2.title.narrow.up Why dont we meet ?
+        .small-12.columns.intro
+          h2.title.narrow.up Isn't it beautiful, is it ?
+        .small-12.columns.intro
+          h3.narrow You are one-click-away from getting <br>this stunning Headr
+        .small-12.columns.intro
+          h5.narrow <br><br><i>P.S. Try to refresh me...</i>
     section.blocky.content
       .fullWidth.wow.fadeInUp
-        .small-4.columns
+        .large-4.columns.show-for-large-up
           hr.grey.right
-        .small-4.columns
-          h1.title.bold.up Content
-        .small-4.columns
-          hr.grey.left
+        .large-4.medium-12.columns
+          h2.title.narrow.up Interesting ?
+        .large-4.medium-12.columns
+          hr.grey.left.show-for-large-up
+          hr.grey.show-for-medium-only
+          hr.grey.show-for-small-only
         
       
   //SCRIPTS
@@ -56,5 +67,8 @@ html
   //APP
   script(src = "js/app.js")
   
-  //PARALLAX
-  script( src = "js/scroll.js")
+  //SCROLL EFFETCS
+  script(src = "js/scroll.js")
+  
+  //ONLOAD IMAGE CHANGE
+  script(src = "js/imageChanger.js")

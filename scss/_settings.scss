@@ -126,7 +126,7 @@ $black       : #000000;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-$body-bg: $tuatara;
+$body-bg: $black;
 $body-font-color: $white;
 $body-font-family: $font-family-sans-serif;
 $body-font-weight: $font-weight-normal;
@@ -153,8 +153,8 @@ $global-rounded: 1000px;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$small-breakpoint:  em-calc(640);
-$medium-breakpoint: em-calc(1024);
+$small-breakpoint:  em-calc(720);
+$medium-breakpoint: em-calc(1180);
 $large-breakpoint:  em-calc(1440);
 $xlarge-breakpoint: em-calc(1920);
 

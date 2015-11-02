@@ -11,18 +11,21 @@ $(window).scroll(function(){
   //Amount of blur in pixels which will be applied to image after User scrolls 100vh
   var maxBlur = 20;
   //Initial darkness
-  var darkStart = 0.9;
+  var darkStart = 0.82;
   var darkEnd   = 0.33;
-
 
   //This is where magic happens (we change css properties of .blur-bg element)
   $('.blur-bg').css({
       //Parallax Effect
       'transform' : 'translate(0px, -'+  (pxScroll)/1.4 +'px)',
       //Blur and Darken background
-      'filter': 'blur('+ (maxBlur*percentsScroll) +'px) brightness('+ (darkStart-(darkStart-darkEnd)*percentsScroll) +')'
+      'filter': 'blur('+ (maxBlur*percentsScroll) +'px) brightness('+ (darkStart-(darkStart-darkEnd)*percentsScroll) +')',
+      '-webkit-filter': 'blur('+ (maxBlur*percentsScroll) +'px) brightness('+ (darkStart-(darkStart-darkEnd)*percentsScroll) +')'
   })
-  //And some more parallax effect for intro text
+  //And some more parallax effect for intro text and logo
+  $('.logo').css({
+      'transform' : 'translate(0px, '+  (pxScroll)/7 +'px)',
+  })
   $('.intro').css({
       'transform' : 'translate(0px, '+  (pxScroll)/5 +'px)',
   })
